@@ -5,18 +5,19 @@ a simple bottom bar nav with smooth animation for Jetpack Compose.
 
 ```kotlin
 Scaffold(
-                    bottomBar = {
-                        AnimatedBottomNavigation(
-                            items = navItems,
-                            selectedItem = selectedItem,
-                            onItemSelected = { selectedItem = it },
-                            containerColor = Color(0xff191931), // your color
-                            iconColor = Color(0xff9496BF) // your color
-                        )
-                    }
-                ) {
-                    // content
-                }
+ bottomBar = {
+	AnimatedBottomNavigation(
+	items = navItems,
+	selectedItem = selectedItem,
+	onItemSelected = { selectedItem = it },
+	containerColor = Color(0xff191931), // your color
+	iconColor = Color(0xff9496BF) // your color
+	)
+ }
+) {
+	// content
+}
+
 ```
 
 ## Demo
